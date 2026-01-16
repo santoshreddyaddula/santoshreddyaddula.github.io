@@ -21,8 +21,7 @@
 
 <section>
   <ul>
-    <li>Best Researcher Award – 2024</li>
-    <li>Top 2% Scientist Recognition</li>
+
   </ul>
 </section>
 
