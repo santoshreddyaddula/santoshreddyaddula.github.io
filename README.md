@@ -13,8 +13,7 @@
     <a href="index.html">Biography</a>
     <a href="education.html">Education</a>
     <a href="publications.html">Publications</a>
-    <a href="services.html">Academic Services</a>
-    <a href="teaching.html">Teaching</a>
+    <a href="Academic services.html">Academic Services</a>
     <a href="awards.html">Honors & Awards</a>
   </nav>
 </header>
