@@ -1,257 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Santosh Reddy Addula - Academic Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Santosh Reddy Addula - Academic Portfolio</title>
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== Body & Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a2a4d; /* Main background */
+    color: #e0e0e0; /* Light gray text */
+}
+
+/* Container for sidebar + main content */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 280px;
+    background-color: #1e1e3f; /* Deep navy */
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section h1 {
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+.profile-section .title,
+.profile-section .affiliation {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 2px 0;
+}
+
+.profile-photo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #3b3b70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #00aaff;
+}
+
+.contact-info p {
+    font-size: 0.85rem;
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #00aaff;
+    margin: 5px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00ffff;
+}
+
+/* Sidebar navigation */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main-nav ul li {
+    margin-bottom: 15px;
+}
+
+.main-nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
+    background-color: #00aaff;
+    color: #1e1e3f;
+}
+
+/* ===== Main Content ===== */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.section {
+    background-color: #35356a; /* Slightly lighter than main bg */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.section-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Publication list */
+.publication-list {
+    list-style: none;
+    padding: 0;
+}
+
+.publication-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444477;
+}
+
+.publication-item .paper-title {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.publication-item .paper-venue {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.publication-item .paper-links a {
+    color: #00aaff;
+    margin-right: 10px;
+}
+
+.publication-item .paper-links a:hover {
+    color: #00ffff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+.footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #00ffff;
+}
+</style>
+
 </head>
 <body>
 
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="profile-section">
-                <!-- Replace with your photo -->
-                <div class="profile-photo-container">
-                    <div class="profile-photo-placeholder">
-                        <i class="fas fa-user-graduate fa-4x"></i>
-                    </div>
-                    <!-- <img src="Santosh.jpg" alt="Your Name" class="profile-photo"> -->
-                </div>
-                
-                <h1>Dr. Santosh Reddy Addula</h1>
-                <p class="title">Research Scholar</p>
-                <p class="affiliation">Department of Information Technology<br>University of the Cumberlands</p>
-                
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> santoshaddulait@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Williamsburg, Kentucky, USA 40769</p>
-                </div>
-
-                <div class="social-links">
-                    <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-photo-container">
+                <div class="profile-photo-placeholder">
+                    <i class="fas fa-user-graduate fa-4x"></i>
                 </div>
             </div>
-
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about" class="active">Biography</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#publication">Publications</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="content">
+            <h1>Dr. Santosh Reddy Addula</h1>
+            <p class="title">Research Scholar</p>
+            <p class="affiliation">Department of Information Technology<br>University of the Cumberlands</p>
             
-            <!-- Biography Section -->
-            <section id="about" class="section">
-                <h2>Biography</h2>
-                <div class="section-content">
-                    <p>
-                        Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at UC. He holds a Ph.D. and a Master of Science degree in Information Technology, bringing extensive experience across multiple domains in the IT industry.
-                        His research focuses on smart technologies and sustainable innovation, reflecting a strong interdisciplinary approach. He has published numerous papers in reputable Scopus-indexed journals and conferences, and has served as a reviewer for international journals and conferences. 
-                        Dr. Addula currently serves as an Associate Editor and Editorial Board Member for journals published by IGI Global and Sage Journal. He is also an active Technical Program Committee (TPC) member for multiple international conferences and a reviewer for several Scopus-indexed journals.
-                    </p>
-                </div>
-            </section>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> santoshaddulait@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Williamsburg, Kentucky, USA 40769</p>
+            </div>
 
-            <!-- Education Section -->
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <div class="section-content">
-                    <div class="timeline-item">
-                        <div class="time">2019 - 2024</div>
-                        <div class="details">
-                            <h3>Ph.D. in Information Technology</h3>
-                            <p class="place">University of the Cumberlands</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">2018 - 2019</div>
-                        <div class="details">
-                            <h3>M.S.c.,. in Information Technology</h3>
-                            <p class="place">University of the Cumberlands</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-<!-- Publications Section -->
-<section id="publication" class="section">
-    <h2>Selected Publications</h2>
-    <div class="section-content">
-        <ul class="publication-list">
+            <div class="social-links">
+                <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
 
-            <!-- Paper 1 -->
-            <li class="publication-item">
-                <div class="paper-title">Generative AI-Enhanced Cybersecurity Framework for Enterprise Data Privacy Management</div>
-                <div class="paper-venue">Computers (MDPI), 2025</div>
-                <div class="paper-links">
-                    <a href="https://www.mdpi.com/2073-431X/14/2/55" target="_blank">[PDF]</a>
-                </div>
-            </li>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about" class="active">Biography</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publication">Publications</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-            <!-- Paper 2 -->
-            <li class="publication-item">
-                <div class="paper-title">Automated Machine Learning to Streamline Data-Driven Industrial Application Development</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10877481" target="_blank">[IEEE Link]</a>
-                </div>
-            </li>
-
-            <!-- Paper 3 -->
-            <li class="publication-item">
-                <div class="paper-title">Mobile Banking Adoption: A Multi-Factorial Study on Social Influence, Compatibility, Digital Self-Efficacy, and Perceived Cost among Generation Z Consumers in the United States</div>
-                <div class="paper-venue">Journal of Theoretical and Applied Electronic Commerce Research (MDPI), 2025</div>
-                <div class="paper-links">
-                    <a href="https://www.mdpi.com/0718-1876/20/3/192" target="_blank">[PDF]</a>
-                </div>
-            </li>
-
-            <!-- Paper 4 -->
-            <li class="publication-item">
-                <div class="paper-title">Automation Using Robots, Machine Learning, and Artificial Intelligence to Enhance Production and Quality</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10877275" target="_blank">[IEEE Link]</a>
-                </div>
-            </li>
-
-            <!-- Paper 5 -->
-            <li class="publication-item">
-                <div class="paper-title">Streamlining Task Planning Systems for Improved Enactment in Contemporary Computing Surroundings</div>
-                <div class="paper-venue">SN Computer Science (Springer), 2024</div>
-                <div class="paper-links">
-                    <a href="https://link.springer.com/article/10.1007/s42979-024-03267-5" target="_blank">[Springer Link]</a>
-                </div>
-            </li>
-
-            <!-- Paper 6 -->
-            <li class="publication-item">
-                <div class="paper-title">A Hybrid Autoencoder and Gated Recurrent Unit Model Optimized by Honey Badger Algorithm for Enhanced Cyber Threat Detection in IoT Networks</div>
-                <div class="paper-venue">Security and Privacy (Wiley), 2025</div>
-                <div class="paper-links">
-                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/spy2.70086" target="_blank">[Wiley Link]</a>
-                </div>
-            </li>
-
-            <!-- Paper 7 -->
-            <li class="publication-item">
-                <div class="paper-title">Optimizing Retail Supply Chain Sales Forecasting with a Mayfly Algorithm-Enhanced Bidirectional Gated Recurrent Unit</div>
-                <div class="paper-venue">SN Computer Science (Springer), 2025</div>
-                <div class="paper-links">
-                    <a href="https://link.springer.com/article/10.1007/s42979-025-04209-5" target="_blank">[Springer Link]</a>
-                </div>
-            </li>
-
-            <!-- Paper 8 -->
-            <li class="publication-item">
-                <div class="paper-title">AI-Powered Security for IoT Ecosystems: A Hybrid Deep Learning Approach to Anomaly Detection</div>
-                <div class="paper-venue">IoT (MDPI), 2025</div>
-                <div class="paper-links">
-                    <a href="https://www.mdpi.com/2624-800X/5/4/90" target="_blank">[PDF]</a>
-                </div>
-            </li>
-
-            <!-- Paper 9 -->
-            <li class="publication-item">
-                <div class="paper-title">Fraudulent Credit Card Transaction Monitoring Using Deep Learning: A CNN-LSTM Approach for Single-Transaction Security Identification</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/11141204" target="_blank">[IEEE Link]</a>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-</section>
-<!-- Academic Services Section -->
-<section id="services" class="section">
-    <h2>Academic Services</h2>
-    <div class="section-content">
-        <h3>Journal Reviewer</h3>
-        <ul>
-            <li>IGI Global</li>
-            <li>IEEE Access</li>
-            <li>ScienceDirect</li>
-        </ul>
-    </div>
-</section>
-            <footer class="footer">
-                <p>&copy; 2026 Your Name. Powered by <a href="https://github.com/StartFromScratch">StartFromScratch</a>.</p>
-            </footer>
-
-        </main>
-    </div>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Highlight active link on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            const navLi = document.querySelectorAll('nav ul li a');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLi.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href').includes(current)) {
-                    a.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Biography Section -->
+        <section id="about" class="section">
+            <h2>Biography</h2>
+            <div class="section-content">
+                <p>
+                    Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at UC. He holds a Ph.D. and a Master of Science degree in Information Technology, bringing extensive experience across multiple domains in the IT industry.
+                    His research focuses on smart technologies and sustainable innovation, reflecting a strong interdisciplinary approach. He has published numerous papers in reputable Scopus-indexed journals and conferences, and has served as a reviewer for internatio
