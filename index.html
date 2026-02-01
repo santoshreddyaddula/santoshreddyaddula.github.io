@@ -15,8 +15,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #1b1b2f; /* Center content background */
-    color: #ffffff;
+    background-color: #000000; /* Black background for sidebar only */
+    color: #000000;
 }
 
 /* ===== Sidebar ===== */
@@ -51,8 +51,22 @@ body {
     color: #00aaff;
 }
 
-.profile-section h1, .profile-section p, .contact-info p {
+.profile-section h1 {
+    font-size: 1.8rem; /* Bigger professional name */
+    font-weight: 700;
+    margin-bottom: 5px;
     color: #ffffff;
+}
+
+.profile-section p {
+    margin: 3px 0;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.contact-info p {
+    font-size: 0.85rem;
+    color: #bbbbbb;
     margin: 5px 0;
 }
 
@@ -98,7 +112,10 @@ body {
 .content {
     margin-left: 280px;
     padding: 40px 30px;
-    color: #ffffff; /* Center content text white */
+    background-color: #ffffff; /* White background for main content */
+    color: #000000; /* Black text in main content */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Sections */
@@ -111,11 +128,13 @@ body {
     text-align: center;
     color: #00aaff;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .section p {
     margin-bottom: 15px;
     text-align: justify;
+    font-size: 1rem;
 }
 
 /* Timeline / Education */
@@ -130,10 +149,11 @@ body {
 
 .timeline-item .details h3 {
     margin: 5px 0;
+    font-size: 1.1rem;
 }
 
 .timeline-item .details p {
-    color: #ffffff;
+    color: #000000;
     font-size: 0.95rem;
 }
 
@@ -145,17 +165,17 @@ body {
 
 .publication-item {
     margin-bottom: 15px;
-    border-bottom: 1px solid #444477;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 10px;
 }
 
 .publication-item .paper-title {
     font-weight: 500;
-    color: #ffffff;
+    color: #000000;
 }
 
 .publication-item .paper-venue {
-    color: #cccccc;
+    color: #333333;
     font-size: 0.9rem;
 }
 
@@ -165,7 +185,7 @@ body {
 }
 
 .publication-item .paper-links a:hover {
-    color: #00ffff;
+    color: #0077cc;
 }
 
 /* Footer */
@@ -173,7 +193,7 @@ body {
     text-align: center;
     padding: 20px 0;
     font-size: 0.85rem;
-    color: #aaaaaa;
+    color: #333333;
 }
 
 .footer a {
@@ -181,7 +201,7 @@ body {
 }
 
 .footer a:hover {
-    color: #00ffff;
+    color: #0077cc;
 }
 
 /* Responsive */
@@ -267,7 +287,7 @@ body {
     <section id="publication" class="section">
         <h2>Selected Publications</h2>
         <ul class="publication-list">
-            <!-- Include all 9 papers here -->
+            <!-- All 9 papers here -->
             <li class="publication-item">
                 <div class="paper-title">Generative AI-Enhanced Cybersecurity Framework for Enterprise Data Privacy Management</div>
                 <div class="paper-venue">Computers (MDPI), 2025</div>
