@@ -60,6 +60,18 @@ a:hover {
 }
 
 .profile-photo {
+    width: 120px;          /* same size as placeholder */
+    height: 120px;
+    border-radius: 50%;    /* makes it circular */
+    object-fit: cover;     /* keeps aspect ratio and crops if needed */
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 2px solid #00aaff; /* optional professional border */
+}
+
+
+
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -335,3 +347,4 @@ p {
         margin-bottom: 3rem;
     }
 }
+
