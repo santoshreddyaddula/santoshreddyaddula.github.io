@@ -60,12 +60,22 @@ a:hover {
 }
 
 .profile-photo {
+    width: 120px;          /* same size as placeholder */
+    height: 120px;
+    border-radius: 50%;    /* makes it circular */
+    object-fit: cover;     /* keeps aspect ratio and crops if needed */
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 2px solid #00aaff; /* optional professional border */
+}
+
+
+
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto 15px auto;
     border: 3px solid #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -105,30 +115,26 @@ a:hover {
     line-height: 1.4;
 }
 
-/* Contact Info */
 .contact-info {
     font-size: 0.85rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1.5rem;
     color: #555;
+    padding: 0 1rem;
 }
 
 .contact-info p {
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
-.contact-info a {
-    font-size: 1.4rem;
+.contact-info i {
+    width: 20px;
+    margin-right: 10px;
     color: var(--secondary-color);
-    display: inline-block;
-    transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
-    color: var(--accent-color);
-}
-
-/* Social Links */
 .social-links {
     margin-bottom: 2rem;
 }
@@ -138,14 +144,12 @@ a:hover {
     font-size: 1.2rem;
     margin: 0 10px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--accent-color);
 }
 
-/* Navigation */
 .main-nav ul {
     list-style: none;
     text-align: left;
@@ -162,13 +166,14 @@ a:hover {
     display: block;
     padding: 5px 0;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent; /* Highlight placeholder */
 }
 
 .main-nav a:hover,
 .main-nav a.active {
     color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* Underline effect */
+    text-decoration: none;
 }
 
 /* Main Content */
@@ -197,11 +202,12 @@ h2 {
     color: #444;
 }
 
+/* Text & Paragraphs */
 p {
     margin-bottom: 1rem;
 }
 
-/* Timeline */
+/* Education Timeline */
 .timeline-item {
     display: flex;
     margin-bottom: 1.5rem;
@@ -259,7 +265,7 @@ p {
     font-weight: 500;
 }
 
-/* Lists */
+/* Lists (Services, Teaching, Awards) */
 .content ul {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -296,7 +302,7 @@ p {
     text-align: center;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 900px) {
     .content {
         padding: 2rem;
@@ -316,13 +322,20 @@ p {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
     }
-
+    
+    .profile-photo-container {
+        margin-bottom: 1rem;
+    }
+    
     .contact-info {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-nav {
-        display: none;
+        display: none; /* Hide nav on mobile simplified view */
     }
 
     .content {
