@@ -7,236 +7,225 @@
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-/* ===== Global Styles ===== */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #000000; /* Black background for sidebar only */
-    color: #000000;
+
+/* ===== Global ===== */
+body{
+    margin:0;
+    font-family:'Roboto',sans-serif;
+    background:#000; /* Black only for sidebar area */
 }
 
 /* ===== Sidebar ===== */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100%;
-    background-color: #000000; /* Black sidebar */
-    padding: 30px 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    color: #ffffff;
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100%;
+    background:#000;
+    padding:30px 20px;
+    box-sizing:border-box;
+    overflow-y:auto;
+    color:#fff;
 }
 
-.profile-section {
-    text-align: center;
-    margin-bottom: 30px;
+/* Profile */
+.profile-section{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-.profile-photo-placeholder {
-    width: 120px;
-    height: 120px;
-    background-color: #333333;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px auto;
-    font-size: 50px;
-    color: #00aaff;
+.profile-photo-placeholder{
+    width:120px;
+    height:120px;
+    background:#222;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    font-size:45px;
+    color:#00aaff;
 }
 
-.profile-section h1 {
-    font-size: 1.2rem; /* Bigger professional name */
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #ffffff;
+/* NAME SIZE REDUCED */
+.profile-section h1{
+    font-size:1rem;
+    font-weight:600;
+    margin:10px 0 5px;
+    line-height:1.3;
 }
 
-.profile-section p {
-    margin: 3px 0;
-    font-size: 0.95rem;
-    color: #cccccc;
+.profile-section p{
+    font-size:0.9rem;
+    margin:3px 0;
+    color:#ccc;
 }
 
-.contact-info p {
-    font-size: 0.85rem;
-    color: #bbbbbb;
-    margin: 5px 0;
+/* Email Toggle */
+.email-icon{
+    margin-top:10px;
+    font-size:20px;
+    cursor:pointer;
+    color:#00aaff;
 }
 
-.social-links a {
-    margin: 0 5px;
-    color: #00aaff;
-    font-size: 1.2rem;
+.email-text{
+    display:none;
+    margin-top:8px;
+    font-size:0.85rem;
+    color:#ccc;
+    word-break:break-all;
 }
 
-.social-links a:hover {
-    color: #00ffff;
+/* Social */
+.social-links a{
+    color:#00aaff;
+    margin:0 6px;
+    font-size:18px;
 }
 
-/* Sidebar Navigation */
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
+.social-links a:hover{
+    color:#00ffff;
 }
 
-.main-nav ul li {
-    margin-bottom: 10px;
+/* Navigation */
+.main-nav ul{
+    list-style:none;
+    padding:0;
+    margin-top:30px;
 }
 
-.main-nav ul li a {
-    color: #ffffff; /* Sidebar link color white */
-    text-decoration: none;
-    font-weight: 500;
-    display: block;
-    padding: 8px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.main-nav li{
+    margin-bottom:8px;
 }
 
-/* Only sidebar option background color on hover or active */
-.main-nav ul li a:hover,
-.main-nav ul li a.active {
-    background-color: #00aaff;
-    color: #ffffff;
+.main-nav a{
+    text-decoration:none;
+    color:#fff;
+    display:block;
+    padding:8px 10px;
+    border-radius:5px;
+    font-weight:500;
+    transition:0.3s;
 }
 
-/* ===== Main Content ===== */
-.content {
-    margin-left: 280px;
-    padding: 40px 30px;
-    background-color: #ffffff; /* White background for main content */
-    color: #000000; /* Black text in main content */
-    min-height: 100vh;
-    box-sizing: border-box;
+.main-nav a:hover,
+.main-nav a.active{
+    background:#00aaff;
+}
+
+/* ===== Content ===== */
+.content{
+    margin-left:260px;
+    padding:40px;
+    background:#fff; /* PURE WHITE CENTER */
+    min-height:100vh;
+    box-sizing:border-box;
+    color:#000;
 }
 
 /* Sections */
-.section {
-    padding: 25px 20px;
-    margin-bottom: 30px;
+.section{
+    margin-bottom:40px;
 }
 
-.section h2 {
-    text-align: center;
-    color: #00aaff;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+.section h2{
+    text-align:center;
+    color:#00aaff;
+    margin-bottom:20px;
 }
 
-.section p {
-    margin-bottom: 15px;
-    text-align: justify;
-    font-size: 1rem;
-}
-
-/* Timeline / Education */
-.timeline-item {
-    margin-bottom: 15px;
-}
-
-.timeline-item .time {
-    color: #00aaff;
-    font-weight: bold;
-}
-
-.timeline-item .details h3 {
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
-
-.timeline-item .details p {
-    color: #000000;
-    font-size: 0.95rem;
+.section p{
+    text-align:justify;
+    line-height:1.6;
 }
 
 /* Publications */
-.publication-list {
-    list-style: none;
-    padding: 0;
+.publication-list{
+    list-style:none;
+    padding:0;
 }
 
-.publication-item {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 10px;
+.publication-item{
+    margin-bottom:18px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ddd;
 }
 
-.publication-item .paper-title {
-    font-weight: 500;
-    color: #000000;
+.paper-title{
+    font-weight:500;
 }
 
-.publication-item .paper-venue {
-    color: #333333;
-    font-size: 0.9rem;
+.paper-venue{
+    font-size:0.9rem;
+    color:#555;
 }
 
-.publication-item .paper-links a {
-    margin-right: 10px;
-    color: #00aaff;
+.paper-links a{
+    color:#00aaff;
+    text-decoration:none;
+    margin-right:8px;
 }
 
-.publication-item .paper-links a:hover {
-    color: #0077cc;
+.paper-links a:hover{
+    text-decoration:underline;
 }
 
 /* Footer */
-.footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.85rem;
-    color: #333333;
-}
-
-.footer a {
-    color: #00aaff;
-}
-
-.footer a:hover {
-    color: #0077cc;
+.footer{
+    text-align:center;
+    padding-top:20px;
+    font-size:0.85rem;
+    color:#444;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
+@media(max-width:768px){
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
     }
-    .content {
-        margin-left: 0;
-        padding: 20px 15px;
+    .content{
+        margin-left:0;
+        padding:25px;
     }
 }
+
 </style>
 </head>
+
 <body>
 
+<!-- Sidebar -->
 <div class="sidebar">
     <div class="profile-section">
         <div class="profile-photo-placeholder">
             <i class="fas fa-user-graduate"></i>
         </div>
+
         <h1>Dr. Santosh Reddy Addula</h1>
         <p>Research Scholar</p>
         <p>University of the Cumberlands</p>
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> santoshaddulait@gmail.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Williamsburg, Kentucky, USA</p>
+
+        <!-- Email Icon Only -->
+        <div class="email-icon" onclick="toggleEmail()">
+            <i class="fas fa-envelope"></i>
         </div>
-        <div class="social-links">
-            <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <div class="email-text" id="emailText">
+            santoshaddulait@gmail.com
+        </div>
+
+        <div class="social-links" style="margin-top:15px;">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-graduation-cap"></i></a>
         </div>
     </div>
 
@@ -250,141 +239,94 @@ body {
     </nav>
 </div>
 
+<!-- Content -->
 <div class="content">
 
-    <!-- Biography -->
-    <section id="about" class="section">
-        <h2>Biography</h2>
-        <p>
-            Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at UC. He holds a Ph.D. and a Master of Science degree in Information Technology, bringing extensive experience across multiple domains in the IT industry.
-        </p>
-        <p>
-            His research focuses on smart technologies and sustainable innovation. He has published numerous papers in reputable Scopus-indexed journals and conferences and has served as a reviewer for international journals and conferences. 
-            Dr. Addula currently serves as an Associate Editor and Editorial Board Member for journals published by IGI Global and Sage Journal.
-        </p>
-    </section>
+<section id="about" class="section">
+    <h2>Biography</h2>
+    <p>
+        Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at the University of the Cumberlands. 
+        He holds a Ph.D. and Master of Science in Information Technology, with strong expertise in Artificial Intelligence, 
+        Machine Learning, Cybersecurity, and Smart Systems.
+    </p>
+</section>
 
-    <!-- Education -->
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="timeline-item">
-            <div class="time">2019 - 2024</div>
-            <div class="details">
-                <h3>Ph.D. in Information Technology</h3>
-                <p>University of the Cumberlands</p>
+<section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>Ph.D. in Information Technology</strong> (2019–2024)<br>
+    University of the Cumberlands</p>
+
+    <p><strong>M.Sc. in Information Technology</strong> (2018–2019)<br>
+    University of the Cumberlands</p>
+</section>
+
+<section id="publication" class="section">
+    <h2>Selected Publications</h2>
+    <ul class="publication-list">
+
+        <li class="publication-item">
+            <div class="paper-title">Generative AI-Enhanced Cybersecurity Framework for Enterprise Data Privacy Management</div>
+            <div class="paper-venue">Computers (MDPI), 2025</div>
+            <div class="paper-links">
+                <a href="https://www.mdpi.com/2073-431X/14/2/55" target="_blank">[PDF]</a>
             </div>
-        </div>
-        <div class="timeline-item">
-            <div class="time">2018 - 2019</div>
-            <div class="details">
-                <h3>M.Sc. in Information Technology</h3>
-                <p>University of the Cumberlands</p>
-            </div>
-        </div>
-    </section>
+        </li>
 
-    <!-- Publications -->
-    <section id="publication" class="section">
-        <h2>Selected Publications</h2>
-        <ul class="publication-list">
-            <!-- All 9 papers here -->
-            <li class="publication-item">
-                <div class="paper-title">Generative AI-Enhanced Cybersecurity Framework for Enterprise Data Privacy Management</div>
-                <div class="paper-venue">Computers (MDPI), 2025</div>
-                <div class="paper-links"><a href="https://www.mdpi.com/2073-431X/14/2/55" target="_blank">[PDF]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Automated Machine Learning to Streamline Data-Driven Industrial Application Development</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10877481" target="_blank">[IEEE Link]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Mobile Banking Adoption: A Multi-Factorial Study on Social Influence, Compatibility, Digital Self-Efficacy, and Perceived Cost among Generation Z Consumers in the United States</div>
-                <div class="paper-venue">Journal of Theoretical and Applied Electronic Commerce Research (MDPI), 2025</div>
-                <div class="paper-links"><a href="https://www.mdpi.com/0718-1876/20/3/192" target="_blank">[PDF]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Automation Using Robots, Machine Learning, and Artificial Intelligence to Enhance Production and Quality</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10877275" target="_blank">[IEEE Link]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Streamlining Task Planning Systems for Improved Enactment in Contemporary Computing Surroundings</div>
-                <div class="paper-venue">SN Computer Science (Springer), 2024</div>
-                <div class="paper-links"><a href="https://link.springer.com/article/10.1007/s42979-024-03267-5" target="_blank">[Springer Link]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">A Hybrid Autoencoder and Gated Recurrent Unit Model Optimized by Honey Badger Algorithm for Enhanced Cyber Threat Detection in IoT Networks</div>
-                <div class="paper-venue">Security and Privacy (Wiley), 2025</div>
-                <div class="paper-links"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/spy2.70086" target="_blank">[Wiley Link]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Optimizing Retail Supply Chain Sales Forecasting with a Mayfly Algorithm-Enhanced Bidirectional Gated Recurrent Unit</div>
-                <div class="paper-venue">SN Computer Science (Springer), 2025</div>
-                <div class="paper-links"><a href="https://link.springer.com/article/10.1007/s42979-025-04209-5" target="_blank">[Springer Link]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">AI-Powered Security for IoT Ecosystems: A Hybrid Deep Learning Approach to Anomaly Detection</div>
-                <div class="paper-venue">IoT (MDPI), 2025</div>
-                <div class="paper-links"><a href="https://www.mdpi.com/2624-800X/5/4/90" target="_blank">[PDF]</a></div>
-            </li>
-            <li class="publication-item">
-                <div class="paper-title">Fraudulent Credit Card Transaction Monitoring Using Deep Learning: A CNN-LSTM Approach for Single-Transaction Security Identification</div>
-                <div class="paper-venue">IEEE Publication, 2025</div>
-                <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11141204" target="_blank">[IEEE Link]</a></div>
-            </li>
-        </ul>
-    </section>
+        <li class="publication-item">
+            <div class="paper-title">Automated Machine Learning to Streamline Data-Driven Industrial Application Development</div>
+            <div class="paper-venue">IEEE, 2025</div>
+        </li>
 
-    <!-- Professional Activities -->
-    <section id="services" class="section">
-        <h2>Professional Activities</h2>
-        <ul>
-            <li>IGI Global Reviewer</li>
-            <li>IEEE Access Reviewer</li>
-            <li>ScienceDirect Reviewer</li>
-        </ul>
-    </section>
+        <li class="publication-item">
+            <div class="paper-title">Mobile Banking Adoption Among Generation Z in the United States</div>
+            <div class="paper-venue">JTAER (MDPI), 2025</div>
+        </li>
 
-    <!-- Footer -->
-    <footer class="footer">
-        &copy; 2026 Dr. Santosh Reddy Addula. Powered by <a href="https://github.com/StartFromScratch">StartFromScratch</a>.
-    </footer>
+        <li class="publication-item">
+            <div class="paper-title">Hybrid Deep Learning for IoT Anomaly Detection</div>
+            <div class="paper-venue">IoT (MDPI), 2025</div>
+        </li>
+
+    </ul>
+</section>
+
+<section id="services" class="section">
+    <h2>Professional Activities</h2>
+    <ul>
+        <li>IEEE Access Reviewer</li>
+        <li>IGI Global Reviewer</li>
+        <li>ScienceDirect Reviewer</li>
+    </ul>
+</section>
+
+<footer class="footer">
+    © 2026 Dr. Santosh Reddy Addula
+</footer>
 
 </div>
 
 <script>
-// Smooth scrolling for sidebar nav
-document.querySelectorAll('.main-nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+
+/* Email Toggle */
+function toggleEmail(){
+    var email = document.getElementById("emailText");
+    if(email.style.display === "block"){
+        email.style.display = "none";
+    } else {
+        email.style.display = "block";
+    }
+}
+
+/* Smooth Scroll */
+document.querySelectorAll('.main-nav a').forEach(anchor=>{
+    anchor.addEventListener('click',function(e){
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior:'smooth'
         });
     });
 });
 
-// Highlight active link on scroll
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('.main-nav a');
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLi.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href').includes(current)) {
-            a.classList.add('active');
-        }
-    });
-});
 </script>
 
 </body>
