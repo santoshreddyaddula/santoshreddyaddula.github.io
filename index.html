@@ -214,13 +214,18 @@ body{
         <p>Senior IEEE Member, Research Scholar</p>
         <p>University of the Cumberlands</p>
 
-        <!-- Email Icon -->
-        <div class="email-icon" onclick="toggleEmail()">
-            <i class="fas fa-envelope"></i>
-        </div>
-        <div class="email-text" id="emailText"style="display:none;">
-            santoshaddulait@gmail.com
-        </div>
+<script>
+// Function to toggle email visibility
+function toggleEmail() {
+    const emailDiv = document.getElementById('emailText');
+    if (emailDiv.style.display === 'none' || emailDiv.style.display === '') {
+        emailDiv.style.display = 'block';
+    } else {
+        emailDiv.style.display = 'none';
+    }
+}
+</script>
+        
         <div class="social-links" style="margin-top:15px;">
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-github"></i></a>
@@ -369,6 +374,7 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
+
 
 
 
