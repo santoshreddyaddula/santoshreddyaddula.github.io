@@ -55,7 +55,7 @@ body{
 
 /* NAME SIZE REDUCED */
 .profile-section h1{
-    font-size:1.2rem;/* smaller, fits correctly */
+    font-size:1.2rem;
     font-weight:600;
     margin:10px 0 5px;
     line-height:1.3;
@@ -67,7 +67,7 @@ body{
     color:#ccc;
 }
 
-/* Email Toggle */
+/* Email Icon */
 .email-icon{
     margin-top:10px;
     font-size:20px;
@@ -124,7 +124,7 @@ body{
 .content{
     margin-left:260px;
     padding:40px;
-    background:#fff; /* PURE WHITE CENTER */
+    background:#fff;
     min-height:100vh;
     box-sizing:border-box;
     color:#000;
@@ -211,15 +211,15 @@ body{
         </div>
 
         <h1>Dr. Santosh Reddy Addula</h1>
-        <p> Senior IEEE Member, Research Scholar</p>
+        <p>Senior IEEE Member, Research Scholar</p>
         <p>University of the Cumberlands</p>
 
-        <!-- Email Icon Only -->
+        <!-- Email Icon -->
         <div class="email-icon" onclick="toggleEmail()">
             <i class="fas fa-envelope"></i>
         </div>
         <div class="email-text" id="emailText">
-            santoshaddulait@gmail.com
+            <a href="mailto:santoshaddulait@gmail.com" style="color:#ccc; text-decoration:none;">santoshaddulait@gmail.com</a>
         </div>
 
         <div class="social-links" style="margin-top:15px;">
@@ -239,13 +239,17 @@ body{
     </nav>
 </div>
 
+
 <!-- Content -->
 <div class="content">
 
 <section id="about" class="section">
     <h2>Biography</h2>
     <p>
-       Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at UC. He holds a Ph.D. and a Master of Science degree in Information Technology, bringing extensive experience across multiple domains in the IT industry. His research focuses on smart technologies and sustainable innovation, reflecting a strong interdisciplinary approach. He has published numerous papers in reputable Scopus-indexed journals and conferences, and has served as a reviewer for international journals and conferences. Dr. Addula currently serves as an Associate Editor and Editorial Board Member for journals published by IGI Global and Sage Journal. He is also an active Technical Program Committee (TPC) member for multiple international conferences and a reviewer for several Scopus-indexed journals.
+       Dr. Santosh Reddy Addula is a Senior Member of IEEE and a research scholar at UC. He holds a Ph.D. and a Master of Science degree in Information Technology, bringing extensive experience across multiple domains in the IT industry. 
+        His research focuses on smart technologies and sustainable innovation, reflecting a strong interdisciplinary approach. He has published numerous papers in reputable Scopus-indexed journals and conferences, and has served as a 
+        reviewer for international journals and conferences. Dr. Addula currently serves as an Associate Editor and Editorial Board Member for journals published by IGI Global and Sage Journal. He is also an active Technical Program 
+        Committee (TPC) member for multiple international conferences and a reviewer for several Scopus-indexed journals.
     </p>
 </section>
 
@@ -364,5 +368,6 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
+
 
 
